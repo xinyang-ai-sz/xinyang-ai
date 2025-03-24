@@ -5,7 +5,6 @@ export default defineConfig({
   base: '/xinyang-ai/',
   plugins: [react()],
   build: {
-    outDir: '/',
     assetsDir: 'assets',
     rollupOptions: {
       output: {
