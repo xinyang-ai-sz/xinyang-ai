@@ -10,9 +10,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: react_template
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -24,4 +21,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./react_template/dist
+          publish_dir: ./dist
