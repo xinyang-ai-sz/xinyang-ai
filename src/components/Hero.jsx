@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-2/5">
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-l-lg shadow-xl"
-          src="/assets/images/hero.jpg"
+          src={`${process.env.NODE_ENV === 'production' ? '/xinyang-ai' : ''}/assets/images/hero.jpg`}
           alt="Office workspace"
         />
       </div>
