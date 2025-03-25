@@ -11,8 +11,10 @@ import Admin from './pages/Admin';
 import Jobs from './pages/Jobs';
 
 function App() {
+  const basename = process.env.NODE_ENV === 'production' ? '/xinyang-ai' : '/';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/admin" element={<Admin />} />
         <Route path="/jobs" element={<Jobs />} />
