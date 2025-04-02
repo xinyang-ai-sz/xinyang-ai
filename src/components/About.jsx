@@ -15,7 +15,7 @@ const About = () => {
           <div className="lg:w-1/2">
             <img
               className="rounded-lg shadow-lg object-cover"
-              src={`${process.env.NODE_ENV === 'production' ? '/xinyang-ai' : ''}/assets/images/about.jpg`}
+              src={`${import.meta.env.PROD ? '/xinyang-ai' : ''}/assets/images/about.jpg`}
               alt="Our team"
             />
           </div>
