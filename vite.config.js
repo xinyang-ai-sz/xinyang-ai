@@ -5,7 +5,6 @@ export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/xinyang-ai/' : '/',
   plugins: [react()],
   build: {
-    outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
       output: {
