@@ -56,13 +56,13 @@ export default function MessageForm() {
 
       setStatus({ 
         type: 'success', 
-        message: 'Message sent successfully! We will get back to you soon.' 
+        message: '留言发送成功！我们会尽快与您联系。' 
       })
       setFormData({ name: '', email: '', message: '' })
     } catch (error) {
       setStatus({ 
         type: 'error', 
-        message: 'Failed to send message. Please try again later.' 
+        message: '留言发送失败，请稍后重试。' 
       })
     } finally {
       setLoading(false)
@@ -71,11 +71,11 @@ export default function MessageForm() {
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6">Contact Us</h2>
+      <h2 className="text-2xl font-bold mb-6">联系我们</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-gray-700 mb-2" htmlFor="name">
-            Name
+            姓名
           </label>
           <input
             type="text"
@@ -89,7 +89,7 @@ export default function MessageForm() {
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 mb-2" htmlFor="email">
-            Email
+            电子邮箱
           </label>
           <input
             type="email"
@@ -103,7 +103,7 @@ export default function MessageForm() {
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 mb-2" htmlFor="message">
-            Message
+            留言内容
           </label>
           <textarea
             id="message"
@@ -129,7 +129,7 @@ export default function MessageForm() {
             loading ? 'bg-blue-300' : 'bg-blue-500 hover:bg-blue-600'
           }`}
         >
-          {loading ? 'Sending...' : 'Send Message'}
+          {loading ? '发送中...' : '发送留言'}
         </button>
       </form>
     </div>

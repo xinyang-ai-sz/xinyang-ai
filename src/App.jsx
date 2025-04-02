@@ -33,7 +33,7 @@ function App() {
                       联系我们
                     </h2>
                     <p className="text-gray-600">
-                      Have a question or feedback? We'd love to hear from you.
+                      欢迎咨询
                     </p>
                   </div>
                   <MessageForm />

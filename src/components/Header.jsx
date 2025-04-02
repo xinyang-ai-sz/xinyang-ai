@@ -7,11 +7,11 @@ const Header = () => {
   const location = useLocation();
 
   const menuItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Solutions', path: '/#solutions' },
-    { label: 'Research', path: '/#research' },
-    { label: 'About', path: '/#about' },
-    { label: 'Join Us', path: '/jobs' },
+    { label: '首页', path: '/' },
+    { label: '解决方案', path: '/#solutions' },
+    { label: '研究成果', path: '/#research' },
+    { label: '关于我们', path: '/#about' },
+    { label: '加入我们', path: '/jobs' },
   ];
 
   const isActive = (path) => {
@@ -26,7 +26,7 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link to="/" className="text-2xl font-bold text-blue-600">
-                XinYang AI
+                智拓欣扬
               </Link>
             </div>
           </div>
