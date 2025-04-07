@@ -1,4 +1,4 @@
-import{s as a}from"./index-BE4Ktotb.js";const m=`
+import{s as a}from"./index-BeRltm8U.js";const m=`
 <div style="font-family: sans-serif;">
   <h2>新留言通知</h2>
   <p>留言人: {{name}}</p>
